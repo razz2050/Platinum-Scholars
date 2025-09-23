@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platinum Scholars</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9fbfd;
+      color: #333;
+    }
+
+    header {
+      background: #1e90ff; /* Light blue */
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: #f1c40f; }
+
+ .hero {
+      background: url("images/students raise.png") no-repeat center center/cover;
+      height: 80vh;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; color: whitesmoke; padding: 20px;
+    }
+    .hero h2 { font-size: 42px; margin-bottom: 20px; text-shadow: 2px 2px 6px #000; }
+    .hero p { font-size: 18px; max-width: 700px; margin-bottom: 30px; }
+    .btn:hover { background: #d4330b; }
+
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    section h2 { text-align: center; margin-bottom: 20px; font-size: 30px; color: #1e90ff; }
+    section p { margin-bottom: 60px; text-align: center; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: left;
+     transition: transform 0.3s;
+      
+  }
+  .card h3 {
+  color: #1e90ff !important;
+}
+
+    .card:hover { transform: translateY(-5px); }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+
+    .comparison, .pricing {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      font-size: 16px;
+    }
+    .comparison th, .comparison td, .pricing th, .pricing td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    .comparison th, .pricing th {
+      background: #1e90ff; color: white;
+    }
+    .highlight { background: #f1c40f; font-weight: bold; }
+
+    .testimonial {
+      background:white;
+      padding: 20px;
+      border-left: 5px solid #1e90ff;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/Platinum Scholars.png" alt="Platinum Scholars Logo">
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Welcome to Platinum Scholars</h2>
+  <p>Student-led tutoring tailored to every learner’s needs — making education simpler, more effective, and affordable.</p>
+  <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Platinum Scholars is a Kenyan student-led online tutoring organization designed to address the unique needs of every learner. We transform academic challenges into opportunities for growth and success.
+    
+    We offer personalized, student-led 
+tutoring that targets exactly where the student needs help—whether it's mastering complex concepts in Math and Science, improving study habits, or preparing for future academic goals, 
+Platinum Scholars is here for you, every step of the way.</p>
+  <div class="grid">
+    <div class="card"><h3>Vision</h3><p>To make learning enjoyable and simple, empowering students to take charge of their own education journey.</p></div>
+    <div class="card"><h3>Mission</h3><p>Transforming challenges into opportunities by offering a holistic approach to learning.</p></div>
+    <div class="card"><h3>Core Values</h3><p>We stand on hard work, integrity, and consistency, guiding students to embody the same ethos.</p></div>
+  </div>
+</section>
+
+<section id="why-us" style="
+  padding: 50px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+">
+  <h2 style="
+    color: #1e90ff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  ">Why Us?</h2>
+
+  <div style="
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  ">
+    
+    <div style="
+      background: #ffffff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    "
+      onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.15)'"
+      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.1)'"
+    >
+      <i class="fas fa-bullseye" style="font-size: 40px; color:#007acc; margin-bottom:15px;"></i>
+      <h3 style="color:#1e90ff; margin-bottom:10px;">Tailored Tutoring</h3>
+      <p style="color:#333; font-size: 1rem;">We focus on areas students identify as challenging, ensuring a customized approach that fits their specific needs, thus leading to better outcomes.</p>
+    </div>
+
+    
+    <div style="
+      background: #ffffff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    "
+      onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.15)'"
+      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.1)'"
+    >
+      <i class="fas fa-user-graduate" style="font-size: 40px; color:#007acc; margin-bottom:15px;"></i>
+      <h3 style="color:#1e90ff; margin-bottom:10px;">Expert Guidance</h3>
+      <p style="color:#333; font-size: 1rem;">Our tutors are successful students who provide practical advice and solutions that worked for them in their own academic journey.</p>
+    </div>
+
+    
+    <div style="
+      background: #ffffff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    "
+      onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.15)'"
+      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.1)'"
+    >
+      <i class="fas fa-book-open" style="font-size: 40px; color:#007acc; margin-bottom:15px;"></i>
+      <h3 style="color:#1e90ff; margin-bottom:10px;">Comprehensive Support</h3>
+      <p style="color:#333; font-size: 1rem;">From in-depth subject reviews to practical exam preparation strategies, we offer a holistic approach to learning.</p>
+    </div>
+
+    <div style="
+      background: #ffffff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    "
+      onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.15)'"
+      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.1)'"
+    >
+      <i class="fas fa-user-graduate" style="font-size: 40px; color:#007acc; margin-bottom:15px;"></i>
+      <h3 style="color:#1e90ff; margin-bottom:10px;">Affordable rates</h3>
+      <p style="color:#333; font-size: 1rem;">As opposed to traditional tutoring programs, we offer pocket-friendly prices, supporting both the guardian and learner in this journey.</p>
+    </div>
+
+    <div style="
+      background: #ffffff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    "
+      onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.15)'"
+      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.1)'"
+    >
+      <i class="fas fa-user-graduate" style="font-size: 40px; color:#007acc; margin-bottom:15px;"></i>
+      <h3 style="color:#1e90ff; margin-bottom:10px;">Flexible Scheduling</h3>
+      <p style="color:#333; font-size: 1rem;">With online sessions, students get to join from the comfort of their homes at the most convenient time for them.</p>
+    </div>
+  </div>
+</section>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+
+<section id="services">
+  <h2>What We Offer</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=600&q=80" alt="Subject Reviews">
+      <h3>1. Subject Reviews</h3><p>Detailed review sessions in Math, Biology, Chemistry, and Physics.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=600&q=80" alt="Exercises">
+      <h3>2. Practice Exercises</h3><p>Curated exercises to consolidate knowledge and boost retention.</p>
+    </div>
+    <div class="card">
+      <img src="images/student exam.png"  alt="Exams">
+      <h3>3. Weekly Exams</h3><p>Comprehensive assessments to track progress and improve performance.</p>
+    </div>
+    <div class="card">
+      <img src="images/big student think.png" alt="Study Strategies">
+      <h3>4. Study Strategies</h3><p>Effective time management, revision techniques, and exam prep methods.</p>
+    </div>
+    <div class="card">
+      <img src="images/career.png" alt="Career Guidance">
+      <h3>5. Career Guidance</h3><p>Mentorship from students in medicine, law, engineering, business and other courses.</p>
+    </div>
+  </div>
+</section>
+
+<section id="numbers" style="padding:60px 20px;">
+  <h2 style="text-align:center; color:#1e90ff; margin-bottom:30px;">What The Numbers Say</h2>
+  
+  <div style="
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:25px; 
+    max-width:1000px; 
+    margin:0 auto;
+    text-align:center;
+  ">
+    <div style="background:#f9fbfd; padding:30px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
+      <h3 class="counter" data-target="90" data-suffix="%" style="font-size:32px; color:#1e90ff;">90%</h3>
+      <p style="margin-top:10px; font-weight:bold;">Satisfaction Rate</p>
+    </div>
+
+    <div style="background:#f9fbfd; padding:30px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
+      <h3 class="counter" data-target="50" data-suffix="+" style="font-size:32px; color:#1e90ff;">50</h3>
+      <p style="margin-top:10px; font-weight:bold;">Students Tutored</p>
+    </div>
+
+    <div style="background:#f9fbfd; padding:30px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
+      <h3 class="counter" data-target="4.6" data-decimals="1" data-suffix="/5" style="font-size:32px; color:#1e90ff;">4.6/5</h3>
+      <p style="margin-top:10px; font-weight:bold;">Average Rating</p>
+    </div>
+
+    <div style="background:#f9fbfd; padding:30px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
+      <h3 class="counter" data-target="120" data-suffix="%" style="font-size:32px; color:#1e90ff;">0</h3>
+      <p style="margin-top:10px; font-weight:bold;">Growth in 2025</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Counter animation
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200; // smaller = faster
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = parseFloat(counter.getAttribute('data-target'));
+        const decimals = counter.getAttribute('data-decimals') || 0;
+        const suffix = counter.getAttribute('data-suffix') || "";
+        const count = parseFloat(counter.innerText);
+        const increment = target / speed;
+
+        if (count < target) {
+          counter.innerText = (count + increment).toFixed(decimals);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target.toFixed(decimals) + suffix;
+        }
+      };
+      updateCount();
+    });
+  };
+
+  // Trigger animation only when section is visible
+  const numbersSection = document.querySelector('#numbers');
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      animateCounters();
+      observer.disconnect(); // Run once
+    }
+  }, { threshold: 0.5 });
+
+  observer.observe(numbersSection);
+</script>
+
+
+
+<section id="packages">
+  <h2>Packages & Pricing</h2>
+  <table class="pricing">
+    <tr><th>Package</th><th>Includes</th><th>2 Hours</th></tr>
+    <tr><td>Bronze</td><td>Study reviews, Practice exercises</td><td>350/=</td></tr>
+    <tr><td>Silver</td><td>Study reviews, Practice exercises, weekly exams, Study strategies</td><td>500/=</td></tr>
+    <tr><td>Gold</td><td>Study reviews, Practice exercises, weekly exams, Study strategies, Career Guidance</td><td>600/=</td></tr>
+  </table>
+</section>
+
+
+
+
+
+
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonial"><p>"Platinum Scholars boosted my KCSE prep! I scored an A- thanks to their support." <br>~ Sheila Wawira, Class of ’23</p></div>
+  <div class="testimonial"><p>"The revision and exams improved my retention and performance. Highly recommend!" <br>~ Jonathan Muema, Class of ’25</p></div>
+  <div class="testimonial"><p>"They made Chemistry fun and easy to understand. Best tutors ever!" <br>~ Phelly Auma, Class of ’24</p></div>
+</section>
+
+<section id="tutor-apply" style="
+  padding: 50px;
+  text-align: center;
+">
+  <h2 style="
+    color: #1e90ff;
+    margin-bottom: 10px;
+  ">Want to be a Tutor?</h2>
+
+  <p style="margin: 10px 0;">Join Platinum Scholars as a tutor and help students achieve academic excellence. Click the link below, fill in your details, and we’ll get back to you.</p>
+
+  
+  <a href="https://forms.gle/r7T9xiuvxRrVaCBY6" target="_blank" 
+     style="
+       display:inline-block;
+       margin-top:10px;
+       padding:14px 28px;
+       background-color:#007acc;
+       color:#fff;
+       border:none;
+       border-radius:8px;
+       cursor:pointer;
+       font-size:18px;
+       text-decoration:none;
+       transition: background 0.3s ease;
+     "
+     onmouseover="this.style.backgroundColor='#023e8a'"
+     onmouseout="this.style.backgroundColor='#007acc'">
+     Apply Now
+  </a>
+</section>
+
+
+
+
+
+<section id="contact" style="
+  padding: 50px;
+  text-align:center;
+">
+  <h2 style="color:#1e90ff; margin-bottom:15px;">Contact Us</h2>
+  <p style="margin: 5px 0;">📧 Email: platinumscholarske@gmail.com</p>
+  <p style="margin: 5px 0;">📞 Phone: +254 787 892 394</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Platinum Scholars. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
