@@ -113,12 +113,48 @@
       padding: 20px;
       margin-top: 40px;
     }
+    /* Hamburger button */
+.hamburger {
+  display: none; /* hidden on desktop */
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+  header nav ul {
+    display: none; /* hide links by default */
+    flex-direction: column;
+    width: 100%;
+    background: #1e90ff;
+    position: absolute;
+    top: 60px; /* below header */
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  header nav ul.show {
+    display: flex; /* show when active */
+  }
+
+  .hamburger {
+    display: block; /* show hamburger on mobile */
+  }
+}
   </style>
 </head>
 <body>
 
 <header>
   <img src="images/Platinum Scholars.png" alt="Platinum Scholars Logo">
+  
+  <!-- Hamburger button -->
+  <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+  
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
@@ -427,7 +463,14 @@ Platinum Scholars is here for you, every step of the way.</p>
 <footer>
   <p>&copy; 2025 Platinum Scholars. All Rights Reserved.</p>
 </footer>
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navUl = document.querySelector('header nav ul');
 
+hamburger.addEventListener('click', () => {
+  navUl.classList.toggle('show');
+});
+</script>
 </body>
 </html>
 
