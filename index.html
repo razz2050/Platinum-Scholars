@@ -145,43 +145,7 @@
     display: block; /* show hamburger on mobile */
   }
 }
-* Hamburger button */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
 
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  border-radius: 3px;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* adjust based on header height */
-    right: 20px;
-    background: #1e90ff;
-    border-radius: 8px;
-    padding: 10px;
-    width: 200px;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-}
   </style>
 </head>
 <body>
@@ -193,11 +157,7 @@
   <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
   
   <nav>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
@@ -513,12 +473,7 @@ hamburger.addEventListener('click', () => {
   navUl.classList.toggle('show');
 });
 </script>
-<script>
-  function toggleMenu() {
-    const menu = document.querySelector('nav ul');
-    menu.classList.toggle('show');
-  }
-</script>
+
 </body>
 </html>
 
