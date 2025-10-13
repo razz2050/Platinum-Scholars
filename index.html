@@ -147,6 +147,11 @@
 }
 
   </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
 
@@ -395,14 +400,106 @@ Platinum Scholars is here for you, every step of the way.</p>
 
 
 
-<section id="packages">
-  <h2>Packages & Pricing</h2>
-  <table class="pricing">
-    <tr><th>Package</th><th>Includes</th><th>2 Hours</th></tr>
-    <tr><td>Bronze</td><td>Study reviews, Practice exercises</td><td>Ksh 350/=</td></tr>
-    <tr><td>Silver</td><td>Study reviews, Practice exercises, weekly exams, Study strategies</td><td>Ksh 500/=</td></tr>
-    <tr><td>Gold</td><td>Study reviews, Practice exercises, weekly exams, Study strategies, Career Guidance</td><td>Ksh 600/=</td></tr>
-  </table>
+<section id="packages" style="text-align:center; padding:60px 20px; background-color:#f9f9f9; font-family:'Segoe UI', sans-serif;">
+  <h2 style="color:#1e90ff; margin-bottom:40px; font-size:2em;">Packages & Pricing</h2>
+  
+  <div class="card-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px;">
+    
+    <!-- Bronze Card -->
+    <div class="card" style="background:white; border-radius:18px; box-shadow:0 6px 12px rgba(0,0,0,0.1); width:320px; padding:30px 25px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.3s ease;">
+      <div>
+        <h3 style="color:#1e90ff; font-size:1.4em;">Bronze</h3>
+        <p style="font-size:15px; color:#1e90ff; margin:15px 0 20px;">Ideal for students seeking support to strengthen core understanding and stay on track academically.</p>
+        <ul style="list-style:none; padding:0; font-size:15px; text-align:left; line-height:1.8;">
+          <li>1. Study reviews</li>
+          <li>2. Practice exercises</li>
+        </ul>
+      </div>
+      <p style="font-weight:bold; color:#333; margin-top:25px; font-size:16px;">From Ksh 400 per 2Hr session</p>
+    </div>
+    
+    <!-- Silver Card -->
+    <div class="card" style="background:white; border-radius:18px; box-shadow:0 6px 12px rgba(0,0,0,0.1); width:320px; padding:30px 25px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.3s ease;">
+      <div>
+        <h3 style="color:#1e90ff; font-size:1.4em;">Silver</h3>
+        <p style="font-size:15px; color:#1e90ff; margin:15px 0 20px;">Perfect for students aiming to improve consistency and exam readiness with regular assessments and personalized strategies.</p>
+        <ul style="list-style:none; padding:0; font-size:15px; text-align:left; line-height:1.8;">
+          <li>1. Study reviews</li>
+          <li>2. Practice exercises</li>
+          <li>3. Weekly exams</li>
+          <li>4. Study strategies</li>
+        </ul>
+      </div>
+      <p style="font-weight:bold; color:#333; margin-top:25px; font-size:16px;">From Ksh 500 per 2Hr session</p>
+    </div>
+    
+    <!-- Gold Card -->
+    <div class="card" style="position:relative; background:white; border-radius:18px; box-shadow:0 6px 12px rgba(0,0,0,0.1); width:320px; padding:30px 25px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.3s ease; border-top:5px solid #1e90ff;">
+      <span style="position:absolute; top:15px; right:-25px; background:#1e90ff; color:white; font-size:12px; font-weight:bold; padding:5px 25px; transform:rotate(45deg); box-shadow:0 2px 5px rgba(0,0,0,0.2);">Most Popular</span>
+      <div>
+        <h3 style="color:#1e90ff; font-size:1.4em;">Gold</h3>
+        <p style="font-size:15px; color:#1e90ff; margin:15px 0 20px;">Best for students who want all-rounded academic growth — blending exam excellence, strategic learning, and mentorship for future success.</p>
+        <ul style="list-style:none; padding:0; font-size:15px; text-align:left; line-height:1.8;">
+          <li>1. Study reviews</li>
+          <li>2. Practice exercises</li>
+          <li>3. Weekly exams</li>
+          <li>4. Study strategies</li>
+          <li>5. Career guidance</li>
+        </ul>
+      </div>
+      <p style="font-weight:bold; color:#333; margin-top:25px; font-size:16px;">From Ksh 700 per 2Hr session</p>
+    </div>
+
+  </div>
+
+  <!-- Hover & Responsive Styles -->
+  <style>
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 1024px) {
+      .card-container {
+        gap: 20px;
+      }
+      .card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+        padding: 25px 20px;
+      }
+      h2 {
+        font-size: 1.8em !important;
+      }
+      h3 {
+        font-size: 1.3em !important;
+      }
+      p, ul {
+        font-size: 14px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        width: 95%;
+        padding: 20px 15px;
+      }
+      h2 {
+        font-size: 1.6em !important;
+      }
+      h3 {
+        font-size: 1.2em !important;
+      }
+      p, ul {
+        font-size: 13px !important;
+      }
+    }
+  </style>
 </section>
 
 
