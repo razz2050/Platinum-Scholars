@@ -176,7 +176,54 @@
 <section class="hero">
   <h2>Welcome to Platinum Scholars</h2>
   <p>Student-led tutoring tailored to every learner’s needs — making education simpler, more effective, and affordable.</p>
-  <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+ <a href="https://wa.me/254787892394?text=Hello%20Platinum%20Scholars!%20I’d%20like%20to%20get%20started%20or%20learn%20more%20about%20your%20tutoring%20programs."
+   target="_blank"
+   class="btn get-started-btn">
+   Get Started
+</a>
+
+<style>
+  .get-started-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* Use your brand color */
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    animation: pulse 2s infinite;
+  }
+
+  .get-started-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  /* Pulse animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+  }
+
+  /* Responsive adjustment */
+  @media (max-width: 600px) {
+    .get-started-btn {
+      font-size: 14px;
+      padding: 10px 22px;
+    }
+  }
+</style>
 </section>
 
 <section id="about">
@@ -500,6 +547,82 @@ Platinum Scholars is here for you, every step of the way.</p>
       }
     }
   </style>
+
+  <div class="cta-section">
+  <h3>Not sure which package fits your needs?</h3>
+  <p>We’ll help you find the perfect tutoring plan for your child.</p>
+  
+  <a href="https://wa.me/254787892394?text=Hello%20Platinum%20Scholars!%20I’d%20like%20to%20book%20a%20free%20consultation%20to%20find%20the%20right%20plan."
+     target="_blank"
+     class="cta-btn primary">
+     Book Free Consultation
+  </a>
+</div>
+
+<style>
+  .cta-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+  }
+
+  .cta-section h3 {
+    font-size: 24px;
+    color: #1e90ff;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .cta-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .cta-btn.primary {
+    background-color: #007bff;
+    color: white;
+    animation: pulse 2s infinite;
+  }
+
+  .cta-btn.primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+
+  /* Subtle pulse animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.6);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .cta-section h3 {
+      font-size: 20px;
+    }
+    .cta-btn {
+      font-size: 14px;
+      padding: 10px 22px;
+    }
+  }
+</style>
 </section>
 
 
@@ -572,6 +695,59 @@ hamburger.addEventListener('click', () => {
   navUl.classList.toggle('show');
 });
 </script>
+
+<a href="https://wa.me/254787892394?text=Hello%20Platinum%20Scholars!%20I'd%20like%20to%20book%20a%20free%20consultation."
+   target="_blank"
+   class="floating-btn">
+   💬 Book a Free Consultation
+</a>
+
+<style>
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Change to your brand color */
+    color: white;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+  }
+
+  .floating-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+
+  /* Pulse Animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+  }
+
+  /* Responsive adjustment for smaller screens */
+  @media (max-width: 600px) {
+    .floating-btn {
+      bottom: 15px;
+      right: 15px;
+      font-size: 14px;
+      padding: 12px 20px;
+    }
+  }
+</style>
 
 </body>
 </html>
